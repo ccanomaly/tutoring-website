@@ -3,19 +3,28 @@ body {
     flex-direction: column;
     margin: 0;
 }
+.upper {
+    background-color: #ed3a1a;
+    display: flex;
+    flex-direction: column;
+    gap: 100px; 
+
+}
 
 header {
-    background-color: #ed3a1a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 15px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 
 .contact {
     font-size: 25px;
     color: white;
+    flex-shrink: 1;
 
 }
 
@@ -30,16 +39,32 @@ header {
 }
 
 .key-container {
-    
-    margin: 25px 0px;
     display: flex;
-    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 50px;  
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .key-title {
-    align-self: center;
     font-size: 50px;
     font-weight: 400;
+    color:white;
+    background-color: #fa5739;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.key-subtext {
+    margin: 5px 0;
+    font-size: 25px;
+}
+
+.key-container img {
+    align-self: flex-end;
+    max-height: 400px;
 }
 
 
@@ -47,4 +72,87 @@ header {
     margin-right: 15px;
     width: 75px;
     height: 75px;
+}
+
+.key-points {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.key-points img{
+    width: 150px;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.point div{
+    max-width: 250px;
+    background-color: #fa5739;
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+    text-align: center; 
+}
+
+.contact-form {
+    font-size: 50px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    background-color: #fa5739;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.info-text {
+    color: white;
+    font-size: 25px;
+    max-width: 700px;
+}
+
+.button-container {
+    margin-bottom: 25px;
+    background-color: #ed3a1a;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+}
+
+.button-guide {
+    color: white;
+    font-size: 50px;    
+    font-weight: 450;
+}
+
+.info-button {
+    color: white;
+    border-color:white;
+    border-radius: 5px;
+    background-color:#ed3a1a;
+    height: 50px;
+    font-weight: bold;
+    align-self: center;
+}
+
+footer {
+    background-color: #fa5739;
+    color: white;
+    text-align: center;
 }
