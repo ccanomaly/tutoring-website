@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    min-height: 100vh;
 }
 .upper {
     background-color: #ed3a1a;
@@ -17,6 +21,7 @@ header {
     align-items: center;
     padding: 0px 15px;
     flex-wrap: wrap;
+    font-family: 'Archivo';
     align-content: center;
 }
 
@@ -29,13 +34,24 @@ header {
 }
 
 .title {
+    all: unset;
     display: flex;
     align-items: center;
     font-size: 50px;
     color: white;
-    font-family: Archivo;
     font-weight: 800;
     margin: 10px 0px;
+}
+
+
+.about-container {
+    margin: 0 25px; 
+    flex-grow: 1;
+    font-family: "Noto Sans", serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
 }
 
 .key-container {
@@ -49,6 +65,7 @@ header {
 
 .key-title {
     font-size: 50px;
+    font-family: "Noto Sans";
     font-weight: 400;
     color:white;
     background-color: #fa5739;
@@ -91,10 +108,10 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    justify-content: center;
 }
 
 .point div{
+    font-family: 'Noto Sans';
     max-width: 250px;
     background-color: #fa5739;
     border-radius: 5px;
@@ -103,11 +120,33 @@ header {
     text-align: center; 
 }
 
+
 .contact-form {
+    margin: 50px 0;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text {
+    text-align: center;
+    font-family: "Noto Sans";
     font-size: 50px;
+
+}
+
+.contact-link {
+    display: inline-block;
+    color:#ed3a1a;
+    transition: transform 1s ease; 
+}
+
+.contact-link:hover {
+    transform: scale(1.02);
 }
 
 .info-container{
+    font-family:'Noto Sans';
     display: flex;
     flex-direction: column;
     padding-top: 25px;
@@ -151,8 +190,11 @@ header {
     align-self: center;
 }
 
+
+
 footer {
     background-color: #fa5739;
     color: white;
     text-align: center;
+    flex-grow: 0;
 }
